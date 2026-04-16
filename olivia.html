@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jasa Cetak Foto</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <span class="navbar-brand">📸 Jasa Cetak Foto</span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="container text-center hero">
+    <h1 class="fw-bold">Cetak Foto Murah & Berkualitas</h1>
+    <p class="text-muted">Cepat • Murah • Hasil HD</p>
+</div>
+
+<!-- PRODUK -->
+<div class="container mb-5">
+    <h3 class="text-center mb-4">Produk Kami</h3>
+    <div class="row text-center">
+
+        <div class="col-md-4">
+            <div class="img-box"><img src="polaroid.jpeg"></div>
+            <h5 class="mt-2">Polaroid</h5>
+        </div>
+
+        <div class="col-md-4">
+            <div class="img-box"><img src="foto biasa.jpeg"></div>
+            <h5 class="mt-2">Foto Biasa</h5>
+        </div>
+
+        <div class="col-md-4">
+            <div class="img-box"><img src="bingkai.jpeg"></div>
+            <h5 class="mt-2">Foto + Bingkai</h5>
+        </div>
+
+    </div>
+</div>
+
+<!-- GALLERY -->
+<div class="container mb-5">
+    <h3 class="text-center mb-4">Gallery</h3>
+    <div class="row">
+        <div class="col-md-4"><img src="" class="img-fluid mb-3"></div>
+        <div class="col-md-4"><img src="galeri.jpeg" class="img-fluid mb-3"></div>
+        <div class="col-md-4"><img src="" class="img-fluid mb-3"></div>
+    </div>
+</div>
+
+<!-- TESTIMONI -->
+<div class="container mb-5">
+    <h3 class="text-center mb-4">Testimoni Customer</h3>
+    <div class="row text-center">
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow">
+                ⭐⭐⭐⭐⭐<br>
+                "Hasilnya bagus banget!"
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow">
+                ⭐⭐⭐⭐⭐<br>
+                "Cepat & murah!"
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow">
+                ⭐⭐⭐⭐⭐<br>
+                "Recommended!"
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- FORM ORDER -->
+<div class="container mb-5">
+    <div class="card p-4 shadow">
+        <h4 class="text-center mb-3">Form Order</h4>
+
+        <input type="text" id="nama" class="form-control mb-2" placeholder="Nama">
+
+        <select id="produk" class="form-control mb-2">
+
+            <optgroup label="📸 FOTO POLAROID">
+                <option value="10000">25 foto - 10k</option>
+                <option value="20000">50 foto - 20k</option>
+                <option value="30000">75 foto - 30k</option>
+                <option value="38000">100 foto - 38k</option>
+            </optgroup>
+
+            <optgroup label="🖼️ FOTO BIASA">
+                <option value="18000">3R (10 foto) - 18k</option>
+                <option value="18000">4R (9 foto) - 18k</option>
+                <option value="18000">5R (5 foto) - 18k</option>
+                <option value="18000">10R (2 foto) - 18k</option>
+                <option value="23000">12R (2 foto) - 23k</option>
+                <option value="20000">A4 (2 foto) - 20k</option>
+                <option value="25000">A3 (2 foto) - 25k</option>
+            </optgroup>
+
+            <optgroup label="🖼️ PERBINGKAIAN">
+                <option value="55000">12R + Bingkai - 55k</option>
+                <option value="40000">10R + Bingkai - 40k</option>
+                <option value="32000">5R + Bingkai - 31k-33k</option>
+            </optgroup>
+
+        </select>
+
+        <input type="number" id="jumlah" class="form-control mb-2" value="1" min="1">
+
+        <p>Total: <b id="total">Rp0</b></p>
+
+        <button onclick="kirimWA()" class="btn btn-success w-100">
+            Order via WhatsApp
+        </button>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
